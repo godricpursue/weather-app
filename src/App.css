@@ -1,38 +1,131 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.parent-container {
+  background-color: white;
+  height: 300px;
+  width: 1000px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+}
+
+.drop-container {
+  background-color: #19a7ce;
+  height: 20%;
+  border-radius: 0.2rem;
+}
+
+select {
+  margin: 10px 0 0 15px;
+  padding: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.wc-container {
+  position: relative;
+  height: 220px;
+  top: 20px;
+  display: flex;
+}
+
+.weather-card {
+  background-color: #f6f1f1;
+  flex: 1;
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 180px;
+  width: 120px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.weather-card > p {
+  margin-top: 10px;
+  color: #19a7ce;
+}
+
+#max {
+  color: #146c94;
+  font-weight: bolder;
+}
+
+.image {
+  max-width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+img {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  position: relative;
+  max-width: 100%;
+  height: 100px;
+}
+
+
+.selectdiv {
+  position: relative;
+  min-width: 200px;
+}
+
+
+.selectdiv:after {
+  content: '<>';
+  font: 17px "Consolas", monospace;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 685px;
+  /*Adjust for position however you want*/
+  
+  top: 18px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  /*left line */
+  
+  position: absolute;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  float: left;
+  margin: 5px 5px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
