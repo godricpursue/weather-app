@@ -28,3 +28,5 @@ This is a simple weather app that shows the weather forecast for the next 5 days
 In the project directory, you can run:
 
 ### `npm start`
+
+![working](working.png)
