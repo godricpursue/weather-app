@@ -1,9 +1,9 @@
 import React from "react";
-import cities from "../../env/cities";
-import { useCity } from "../../context/CityContext";
+import cities from "../../env/cities"; // Import the list of cities from the 'cities' file
+import { useCity } from "../../context/CityContext"; // Import the 'useCity' hook from the CityContext
 
 function DropdownList() {
-  const { selectedCity, setSelectedCity } = useCity();
+  const { selectedCity, setSelectedCity } = useCity(); // Access the 'selectedCity' and 'setSelectedCity' values from the CityContext
 
   function handleSelectCity(event) {
     setSelectedCity(event.target.value);

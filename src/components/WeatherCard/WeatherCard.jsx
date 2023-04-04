@@ -7,7 +7,10 @@ function WeatherCard(props) {
       <div className="image">
         <img src={props.images} alt="parcali" />
       </div>
-      <p><span id="max">{props.max}°</span> <span id="min">{props.min}°</span></p>
+      <p id="desc">{props.desc}</p>
+      <p>
+        <span id="max">{props.max}°</span> <span id="min">{props.min}°</span>
+      </p>
     </div>
   );
 }

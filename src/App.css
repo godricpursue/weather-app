@@ -45,7 +45,7 @@ select {
 }
 
 .weather-card {
-  background-color: #f6f1f1;
+  background-color: white;
   flex: 1;
   margin-left: 2px;
   margin-right: 2px;
@@ -57,6 +57,12 @@ select {
 .weather-card > p {
   margin-top: 10px;
   color: #19a7ce;
+}
+
+#desc {
+  color: #14728c;
+  font-size: smaller;
+  margin-bottom: 15px;
 }
 
 #max {
@@ -79,15 +85,13 @@ img {
   height: 100px;
 }
 
-
 .selectdiv {
   position: relative;
   min-width: 200px;
 }
 
-
 .selectdiv:after {
-  content: '<>';
+  content: "<>";
   font: 17px "Consolas", monospace;
   color: #333;
   -webkit-transform: rotate(90deg);
@@ -96,12 +100,12 @@ img {
   transform: rotate(90deg);
   right: 685px;
   /*Adjust for position however you want*/
-  
+
   top: 18px;
   padding: 0 0 2px;
   border-bottom: 1px solid #999;
   /*left line */
-  
+
   position: absolute;
   pointer-events: none;
 }
@@ -127,5 +131,3 @@ img {
   -ms-word-break: normal;
   word-break: normal;
 }
-
-
