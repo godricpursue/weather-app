@@ -56,6 +56,7 @@ function Home() {
             return (
               <WeatherCard
                 key={item.dt}
+                class={index === 0 ? "weather-card selected" : "weather-card"}
                 day={printedDays[index]}
                 images={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
                 desc={item.weather[0].description}
